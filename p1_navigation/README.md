@@ -23,6 +23,37 @@ States look like: [1.         0.         0.         0.         0.84408134 0.
 States have length: 37
 ```
 
+### Getting Started
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+2. Clone the DRLND repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install .
+```
+
+3. Clone this repository and open project notebook
+```bash
+git clone https://github.com/karanjude/DeepRL.git
+cd DeepRL/p1_navigation
+jupyter notebook
+```
+
 ### Trained agent video
 Video of a trained DQN agent to capture bananas - https://youtu.be/6mM8IUraksc
 
