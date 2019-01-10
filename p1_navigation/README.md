@@ -29,15 +29,10 @@ To set up your python environment to run the code in this repository, follow the
 
 1. Create (and activate) a new environment with Python 3.6.
 
-	- __Linux__ or __Mac__: 
+	- __Mac__: 
 	```bash
 	conda create --name drlnd python=3.6
 	source activate drlnd
-	```
-	- __Windows__: 
-	```bash
-	conda create --name drlnd python=3.6 
-	activate drlnd
 	```
 	
 2. Clone the DRLND repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
@@ -47,10 +42,17 @@ cd deep-reinforcement-learning/python
 pip install .
 ```
 
-3. Clone this repository and open project notebook
+3. Clone this repository 
 ```bash
 git clone https://github.com/karanjude/DeepRL.git
 cd DeepRL/p1_navigation
+```
+
+4. Download Unity ML agent env from https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip
+and unzip place it under DeepRL/p1_navigation
+
+5. Start jupyter and open Navigation.ipynb
+```bash
 jupyter notebook
 ```
 
