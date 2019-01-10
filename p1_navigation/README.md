@@ -16,7 +16,8 @@ At each time step, the agent has four actions at its disposal:
 #### State
 
 ```
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. 
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of 
+objects around agent's forward direction. 
 
 Number of actions: 4
 States look like: [1.         0.         0.         0.         0.84408134 0.
