@@ -1,4 +1,4 @@
-### DeepRL
+## DeepRL
 Projects and experiments from Udacity Deep Reinforcement Learning Course. All code written in Python3 and Pytorch.
 
 ### Project Navigation Details:
