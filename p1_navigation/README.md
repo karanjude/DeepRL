@@ -2,12 +2,16 @@
 ### Project Details
 In a unity ML-Agent environment, yellow and blue bananas are failling. Train an agent to capture falling yellow bananas. A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.
 
+1. Actions
+
 At each time step, the agent has four actions at its disposal:
 
 * 0 - walk forward
 * 1 - walk backward
 * 2 - turn left
 * 3 - turn right
+
+2. State
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction. 
 
@@ -22,6 +26,8 @@ States look like: [1.         0.         0.         0.         0.84408134 0.
  0.        ]
 States have length: 37
 ```
+
+3. Success Criteria 
 
 The agent should be able to receive an average reward (over 100 episodes) of at least +13
 
