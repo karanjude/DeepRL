@@ -23,6 +23,8 @@ States look like: [1.         0.         0.         0.         0.84408134 0.
 States have length: 37
 ```
 
+The agent should be able to receive an average reward (over 100 episodes) of at least +13
+
 ### Getting Started
 
 To set up your python environment to run the code in this repository, follow the instructions below.
