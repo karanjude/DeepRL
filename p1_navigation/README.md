@@ -1,5 +1,5 @@
 
-#### Project Details
+### Project Details
 Train an agent to capture falling bananas. 
 
 The simulation contains a single agent that navigates a large environment. At each time step, it has four actions at its disposal:
@@ -23,10 +23,10 @@ States look like: [1.         0.         0.         0.         0.84408134 0.
 States have length: 37
 ```
 
-#### Trained agent video
+### Trained agent video
 Video of a trained DQN agent to capture bananas - https://youtu.be/6mM8IUraksc
 
-#### Project Files
+### Project Files
 * Files for Navigation project can be found at https://github.com/karanjude/DeepRL/tree/master/p1_navigation
 
 * Agent code that implements DQN can be found at https://github.com/karanjude/DeepRL/blob/master/p1_navigation/dqn_agent.py
