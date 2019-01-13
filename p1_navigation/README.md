@@ -62,7 +62,7 @@ cd DeepRL/p1_navigation
 4. Download Unity ML agent env from https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip
 and unzip place it under DeepRL/p1_navigation
 
-5. Start jupyter and open Navigation.ipynb
+5. Start jupyter and run cells in Navigation.ipynb to train the agent and evaluate the agent for 100 episodes
 ```bash
 jupyter notebook
 ```
