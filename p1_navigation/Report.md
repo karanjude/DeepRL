@@ -37,15 +37,37 @@ States have length: 37
 
 ### Learning Algorithm 
 
-DQN
+DQN - Deep Q-Learning algorithm represents the optimal action-value function q* as a neural network instead of a table.
+
+Note:
+
+```
+θ_target = τ*θ_local + (1 - τ)*θ_target
+```
+
+target network is updated using a local q network. This helps in fixing the targets and making the update more stable.
 
 #### Hyper parameters
 
 1. eps_start (float): starting value of epsilon, for epsilon-greedy action selection by the agent. Value: eps_start=1.0
 2. eps_end (float): minimum value of epsilon. Value: eps_decay=0.995.
 3. eps_decay (float): multiplicative factor (per episode) for decreasing epsilon. Value: eps_decay=0.995
+4. GAMMA = 0.99            # discount factor
+5. TAU = 1e-3              # for soft update of target parameters
+6. LR = 5e-4               # learning rate 
 
 #### Model architecture
+
+```
+QNetwork(
+  (fc1): Linear(in_features=37, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=4, bias=True)
+)
+```
+
+The network consists of 3 fully connected layers. Input layer takes in a state vector. Final layer produces 
+3 action values. The layers themselves are connected via relu activation units units. The final action value is selected via an arg max.
 
 ### Plot of rewards
 
