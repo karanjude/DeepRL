@@ -67,7 +67,7 @@ QNetwork(
 ```
 
 The network consists of 3 fully connected layers. Input layer takes in a state vector. Final layer produces 
-3 action values. The layers themselves are connected via relu activation units units. The final action value is selected via an arg max.
+4 action values. The layers themselves are connected via relu activation units units. The final action value is selected via an arg max.
 
 ### Plot of rewards
 
