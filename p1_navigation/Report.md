@@ -4,7 +4,7 @@
 
 #### Hyper parameters
 
-#### Model architectures
+#### Model architecture
 
 ### Plot of rewards
 
