@@ -31,6 +31,9 @@ CRITIC_LR = 1e-4          # learning rate of critic
 ACTOR_WEIGHT_DECAY = 0.0  # L2 weight decay of actor
 CRITIC_WEIGHT_DECAY = 0.0 # L2 weight decay of critic
 ```
+### Plot of rewards during training
+
+![Reward plot](https://github.com/karanjude/DeepRL/blob/master/p2_continuous_control/training_reward_plot.png "Training Reward Plot")
 
 ### Plot of rewards during inference
 
