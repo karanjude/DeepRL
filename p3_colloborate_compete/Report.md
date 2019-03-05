@@ -43,8 +43,8 @@ It took the agent 1000 episodes for the model to consistently get an average sco
 
 ### Ideas for future work
 
-- ![Multi Agent] (https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf "Multi Agent Actor Critic for Mixed Cooperative Competitive environments"). It can help with stability and convergence, in a non stationary environment.
+- (https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf "Multi Agent Actor Critic for Mixed Cooperative Competitive environments"). It can help with stability and convergence, in a non stationary environment.
 
-- ![Priortized Experience Replay] (https://arxiv.org/abs/1511.05952 "Priortized Experience Replay") Prioritized Experience Replay which helps with important but less frequently seen experiences
+- (https://arxiv.org/abs/1511.05952 "Priortized Experience Replay") Prioritized Experience Replay which helps with important but less frequently seen experiences
 
 It might be possible to use PPO, A3C, D4PG (Distributed Distributional Deterministic Policy Gradients) to train the model quicker.
