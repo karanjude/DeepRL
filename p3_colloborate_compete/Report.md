@@ -1,5 +1,7 @@
 ### Project 
-This project uses DDPG, to learn an agent in continuous space. Infact, during the project realized it better to train N agents parallely as they converge faster and the overall agent performance also improves.
+This project uses multi DDPG agent, to learn an agent in continuous space. I train N (2) agents parallely as they converge faster and the overall agent performance also improves. Here a global actor and critic is trained on data received from all the agents. 
+
+Note: this is not the same as a multi agent training where critic within an agent is trained on global data and actor wihtin an agent is trained on agent specific local data. For this project, one actor/critic trained on global data from all N agent seem to work. This might not be true for more complex environments. 
 
 ### Model
 
@@ -33,16 +35,16 @@ CRITIC_WEIGHT_DECAY = 0.0 # L2 weight decay of critic
 ```
 ### Plot of rewards during training
 
-![Reward plot](https://github.com/karanjude/DeepRL/blob/master/p2_continuous_control/training_reward_plot.png "Training Reward Plot")
-
-### Plot of rewards during inference
-
-![Reward plot](https://github.com/karanjude/DeepRL/blob/master/p2_continuous_control/reward_plot.png "Reward Plot")
+![Reward plot](https://github.com/karanjude/DeepRL/blob/master/p3_colloborate_compete/training_reward_plot.png "Training Reward Plot")
 
 ### Episodes needed to solve the environment
 
-It took the agent 191 episodes for the model to consistently get an average score of 30+. For inference, model got an average score of 30+. 
+It took the agent 1000 episodes for the model to consistently get an average score of .5+. 
 
 ### Ideas for future work
+
+- ![Multi Agent] (https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf "Multi Agent Actor Critic for Mixed Cooperative Competitive environments"). It can help with stability and convergence, in a non stationary environment.
+
+- ![Priortized Experience Replay] (https://arxiv.org/abs/1511.05952 "Priortized Experience Replay") Prioritized Experience Replay which helps with important but less frequently seen experiences
 
 It might be possible to use PPO, A3C, D4PG (Distributed Distributional Deterministic Policy Gradients) to train the model quicker.
