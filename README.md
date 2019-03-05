@@ -9,3 +9,6 @@ https://github.com/karanjude/DeepRL/blob/master/p1_navigation/README.md
 
 https://github.com/karanjude/DeepRL/tree/master/p2_continuous_control/README.md
 
+### Project Colloborate Compete ###
+
+https://github.com/karanjude/DeepRL/tree/master/p3_colloborate_compete/README.md
