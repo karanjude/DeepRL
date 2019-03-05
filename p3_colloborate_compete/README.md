@@ -38,7 +38,7 @@ The state for the first agent looks like: [ 0.          0.          0.          
 For this project:
 - We have 2 identical agents, each with its own copy of the environment.  
 
-Here i use DDPG, that uses multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience. Note, each agent congtributes to a global replay buffer, which is then used to train a global ddpg agent (actor + critic).
+Here i use DDPG, that uses multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience. Note, each agent contributes to a global replay buffer, which is then used to train a global ddpg agent (actor + critic).
 
 #### Goal
 
