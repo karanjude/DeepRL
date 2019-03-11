@@ -45,4 +45,8 @@ It took the agent 191 episodes for the model to consistently get an average scor
 
 ### Ideas for future work
 
-It might be possible to use PPO, A3C, D4PG (Distributed Distributional Deterministic Policy Gradients) to train the model quicker.
+- https://arxiv.org/abs/1511.05952 - "Priortized Experience Replay". Prioritized Experience Replay which helps with important but less frequently seen experiences
+
+- Training the agent with PPO (Proximal Policy Optimization). 
+
+- Batch Prop a drouputs could help with faster training. 
