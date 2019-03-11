@@ -1,5 +1,9 @@
 ### Project 
-This project uses DDPG, to learn an agent in continuous space. Infact, during the project realized it better to train N agents parallely as they converge faster and the overall agent performance also improves.
+This project uses DDPG (https://arxiv.org/pdf/1509.02971.pdf), to learn an agent in continuous space. Infact, during the project realized it better to train N agents parallely as they converge faster and the overall agent performance also improves.
+
+DDPG is similar to DQN. Unlike DQN, DDPG works well for continuous spaces. It has 2 neural nets, one representing the actor and other representing the critic. The actor neural net tries to choose the best polciy for each state. The critic neural net evaluates the differnt policy choices. Since learning can be unstable, a combination of local and target networks are used to improve stability. Local and target networks are used for both actor as well as critic.
+
+The model architecture (actor, critic) used for the reacher env are described below:
 
 ### Model
 
@@ -47,6 +51,6 @@ It took the agent 191 episodes for the model to consistently get an average scor
 
 - https://arxiv.org/abs/1511.05952 - "Priortized Experience Replay". Prioritized Experience Replay which helps with important but less frequently seen experiences
 
-- Training the agent with PPO (Proximal Policy Optimization). 
+- Training the agent with PPO (Proximal Policy Optimization) and Trust Region Policy Optimization (https://arxiv.org/abs/1502.05477)
 
 - Batch Prop a drouputs could help with faster training. 
